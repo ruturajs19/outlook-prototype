@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware from "redux-saga";
 
+import { outlookReducer } from './State/outlook.reducer';
+import { watcher } from './State/outlook.sagas';
+const sagamiddleware = createSagaMiddleware();
+const store = createStore(outlookReducer, applyMiddleware(sagamiddleware));
+sagamiddleware.run(watcher)
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 

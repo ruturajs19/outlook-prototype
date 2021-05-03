@@ -1,0 +1,41 @@
+.sidebar {
+  height: 100%;
+  width: inherit;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+  background-color: lightgray;
+  color: black;
+}
+
+.subnavbar {
+  margin: 0px;
+  top: 0;
+  background-color: lightgray;
+  color: black;
+  display: flex;
+  padding: 6px;
+  border-bottom: 0.1px;
+}
+.sidebar-icon-line {
+  margin: 0.5rem 0;
+}
+
+.sidebar-icon {
+  width: 25px;
+  margin-right: 26px;
+}
+
+.new-message {
+  background-color: #0078d4;
+  padding: revert;
+}
+.active-tab{
+  background-color: #0078d4;
+  color: white;
+}
+.custom-accordion{
+  background-color: lightgrey !important;
+}

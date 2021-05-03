@@ -1,0 +1,28 @@
+.mail-list {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 0px;
+  color: black;
+  border-right: 1px solid;
+}
+
+.mail-list-item{
+    justify-content: left;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.mail-list-content{
+    display: block;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mail-list-subject{
+  color: #0078d4;
+}

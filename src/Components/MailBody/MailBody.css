@@ -1,0 +1,10 @@
+.mail-body {
+  height: 100%;
+  width: 63%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  overflow-x: hidden;
+  padding: 50px;
+  color: black;
+}

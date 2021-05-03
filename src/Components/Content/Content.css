@@ -1,0 +1,25 @@
+.content{
+    top: 100;
+    margin-top: 48px;
+    display: flex;
+    width: 100%;
+}
+.content-sidebar{
+    width: 12%;
+}
+.header{
+    width: inherit;
+    background-color: lightgray;
+    height:47px;
+}
+.content-body{
+    display: block;
+    width: 100%;
+}
+.mail-items{
+    display: flex;
+}
+.content-body-container{
+    height: 100%;
+    width: 88%;
+}
